@@ -3,32 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dillon DiPetrillo</title>
+    <title>Dillon DiPetrillo | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
 </head>
 <body>
     <nav>
-        <div class="logo">
-            <p>Dillon DiPetrillo</p>
+        <div class="nav-content" id='top'>
+            <div class="logo"></div>
+            <ul>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="mailto:dillonrdipetrillo@gmail.com" class="contact">Contact</a></li>
+            </ul>
         </div>
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Contact</a></li>
-        </ul>
     </nav>
     <main>
-        <div class="main-content">
-            <h1>Dillon DiPetrillo</h1>
-            <h2>Software Engineer</h2>
-            <button>Explore</button>
-        </div>
-        <div class="social-link">
-            <i class="fab fa-linkedin"></i>
-            <i class="fab fa-github"></i>
+        <div class="main-wrapper">
+            <div class="main-content">
+                <h1>Dillon DiPetrillo</h1>
+                <hr>
+                <h2>Software Engineer</h2>
+                <a href="#projects">
+                    <button>Explore</button>
+                </a>
+            </div>
+            <div class="social-link">
+                <a href="https://www.linkedin.com/in/dillon-dipetrillo/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/dillondipetrillo" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
         </div>
     </main>
+    <section class="project-sec" id='projects'>
+        <h2 class="sec-title">Projects</h2>
+        <div class="projects">
+            <a href="https://playset.surge.sh/" target="_blank">
+                <div class="proj one">
+                </div>
+            </a>
+            <a href="https://dillondipetrillo.github.io/montre/" target="_blank">
+                <div class="proj two">
+                </div>
+            </a>
+            <a href="https://dillondipetrillo.com/lead-fitness/" target="_blank">
+                <div class="proj three">
+                </div>
+            </a>
+            <a href="https://dillondipetrillo.github.io/drum-set/" target="_blank">
+                <div class="proj four">
+                </div>
+            </a>
+        </div>
+    </section>
+    <section class="about-sec" id='about'>
+        <div class="about-content">
+            <h2 class="sec-title">Dillon DiPetrillo</h2>
+            <div class="social">
+                <a href="https://www.linkedin.com/in/dillon-dipetrillo/" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/dillondipetrillo" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            <p>Software developer with project experience in all stages of web design and development. Passionate about user interface and user experience processes. Proficient in many programming languages and design applications - HTML5, CSS3, JavaScript, React, Git, Mocha, PHP, Adobe XD, Adobe Illustrator, and Adobe Photoshop. Interested in opportunities in developing user interfaces, web or mobile development and robotics.</p>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <a href="#top">
+                <div class="logo"></div>
+            </a>
+            <a href="mailto:dillonrdipetrillo@gmail.com" class="contact">Contact</a>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>

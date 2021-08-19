@@ -1,9 +1,476 @@
+/* Universal Styles */
+
 *, html {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
 }
 
 ul li {
-   
+    list-style: none;
+}
+
+.nav-content, .main-wrapper, .projects, .about-content, .footer-content {
+    position: relative;
+    max-width: 1450px;
+    margin: auto;
+}
+
+.sec-title {
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+.sec-title::before {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    height: 3px;
+    width: 100px;
+    background: rgb(173, 173, 173);
+}
+
+.contact {
+    background: rgba(65, 65, 65, 0.4);
+    color: rgb(173, 173, 173);
+    padding: 10px 20px;
+    border-radius: 4px;
+    transition: .3s;
+    font-size: 18px;
+}
+
+/* Nav Section */
+
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 5;
+    background: transparent;
+}
+
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 60px;
+}
+
+.logo {
+    height: 30px;
+    width: 30px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background: linear-gradient(to bottom right, rgb(29, 29, 212), rgb(197, 5, 197));
+}
+
+.nav-content ul {
+    display: flex;
+}
+
+.nav-content ul li {
+    padding: 0 20px;
+}
+
+.nav-content ul li a {
+    color: rgb(173, 173, 173);
+    transition: .3s;
+    font-size: 18px;
+}
+
+.nav-content ul li a:hover {
+    color: #fff;
+}
+
+/* Main Section */
+
+main {
+    position: relative;
+    color: #fff;
+    background: linear-gradient(rgb(12, 12, 12), #000);
+}
+
+.main-wrapper {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.main-content h1 {
+    font-size: 72px;
+}
+
+hr {
+    width: 40%;
+    height: 3px;
+    background: rgb(173, 173, 173);
+    border: none;
+    margin: 20px auto;
+}
+
+.main-content h2 {
+    font-size: 36px;
+}
+
+.main-content a button {
+    color: rgb(173, 173, 173);
+    background: none;
+    padding: 12px 60px;
+    font-size: 20px;
+    margin-top: 80px;
+    transition: .3s;
+
+    border-style: solid;
+    border-width: 5px;
+    border-image: linear-gradient(to bottom right, rgb(29, 29, 212), rgb(197, 5, 197)) 1;
+}
+
+.main-content a button:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.social-link {
+    position: absolute;
+    bottom: 60px;
+    left: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-link a:nth-child(2) {
+    margin-top: 20px;
+}
+
+.social-link a {
+    color: rgb(173, 173, 173);
+    transition: .3s;
+}
+
+.social-link a:hover {
+    color: #fff;
+}
+
+.social-link a i {
+    font-size: 32px;
+}
+
+/* Project Section */
+
+.project-sec {
+    background: linear-gradient(#000, rgb(12, 12, 12));
+    padding: 100px 0;
+}
+
+.projects {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 28px;
+    padding: 80px 60px;
+}
+
+.projects .proj {
+    position: relative;
+    height: 300px;
+    overflow: hidden;
+}
+
+.projects .proj::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(56, 56, 56, 0.4);
+    transition: .4s;
+}
+
+.projects .proj:hover::before {
+    background: none;
+}
+
+.projects .one {
+    background-image: url(./imgs/playset-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects .two {
+    background-image: url(./imgs/montre-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects .three {
+    background-image: url(./imgs/Lead-fitness-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.projects .four {
+    background-image: url(./imgs/drum-set-img.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* About Section */
+
+.about-sec {
+    background: linear-gradient(to bottom right, rgb(12, 12, 12), rgb(15, 15, 15));
+    color: #fff;
+}
+
+.about-content {
+    padding: 60px;
+}
+
+.about-sec .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto 90px auto;
+    background: rgba(65, 65, 65, 0.4);
+    width: 200px;
+    border-radius: 6px;
+}
+
+.about-sec .social a {
+    color: rgb(173, 173, 173);
+    font-size: 40px;
+    margin: 15px;
+    transition: .3s;
+}
+
+.about-sec .social a:hover {
+    color: #fff;
+}
+
+.about-content p {
+    font-size: 20px;
+    text-align: center;
+    line-height: 1.8;
+    margin: 60px auto;
+    max-width: 600px;
+}
+
+/* Footer Section */
+
+footer {
+    background: linear-gradient(to bottom right, rgb(15, 15, 15), rgb(17, 17, 17));
+}
+
+.footer-content {
+    padding: 30px 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-content a div {
+    transition: .3s;
+}
+
+.footer-content a div:hover {
+    transform: translateY(-5px);
+}
+
+.footer-content .contact:hover {
+    color: #fff;
+}
+
+@media only screen and (max-width: 740px) {
+    /* Nav Section */
+
+    .nav-content .logo {
+        display: none;
+    }
+
+    .nav-content ul {
+        margin: auto;
+    }
+
+    .contact {
+        background: none;
+        padding: 0;
+    }
+
+    /* Main Section */
+
+    .main-content h1 {
+        font-size: 60px;
+    }
+    
+    .main-content h2 {
+        font-size: 30px;
+    }
+    
+    .main-content a button {
+        margin-top: 60px;
+    }
+
+    .social-link {
+        flex-direction: row;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .social-link a:nth-child(2) {
+        margin-top: 0;
+        margin-left: 30px;
+    }
+    
+    .social-link a i {
+        font-size: 34px;
+    }
+
+    /* About Section */
+
+    .about-sec .social {
+        margin: 80px auto 70px auto;
+        width: 180px;
+    }
+    
+    .about-sec .social a {
+        font-size: 34px;
+    }
+
+    .about-content p {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 499px) {
+    /* Nav Section */
+
+    nav {
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 90%;
+    }
+
+    .nav-content {
+        background: rgba(65, 65, 65, 0.4);
+        padding: 20px;
+        border-radius: 6px;
+    }
+
+    .nav-content ul {
+        padding: 10px 0;
+    }
+
+    .nav-content ul li a {
+        font-size: 16px;
+        font-weight: 800;
+        color: #fff;
+    }
+
+    /* Main Section */
+
+    .main-content h1 {
+        font-size: 42px;
+    }
+    
+    .main-content h2 {
+        font-size: 30px;
+    }
+    
+    .main-content a button {
+        color: #fff;
+        padding: 12px 90px;
+        font-size: 18px;
+        margin-top: 60px;
+    }
+
+    .social-link a i {
+        color: #fff;
+    }
+
+    /* Project Section */
+
+    .projects {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 28px;
+        padding: 80px 20px;
+    }
+
+    .projects .proj::before {
+        background: none;
+    }
+
+    .projects .proj {
+        height: 200px;
+    }
+
+    /* About Section */
+
+    .about-content {
+        padding: 60px 20px;
+    }
+
+    .about-sec .social a {
+        color: #fff;
+        font-size: 32px;
+    }
+
+    /* Footer Section */
+
+    .footer-content .contact {
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    /* Nav Section */
+
+    .nav-content {
+        padding: 20px 5px;
+    }
+    
+    .nav-content ul li {
+        padding: 0 10px;
+    }
+
+    /* Main Section */
+
+    .main-content h1 {
+        font-size: 36px;
+    }
+    
+    .main-content h2 {
+        font-size:20px;
+    }
+
+    .main-content a button {
+        margin-top: 30px;
+    }
+
+    /* About Section */
+
+    .about-content p {
+        font-size: 14px;
+    }
 }
